@@ -4,51 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icone/lanche.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>SORTEIO</title>
 
-    <style>
-        body{
-            background-color: red;
-        }
-        
-        
-        .painel{
-            margin: auto;
-            background-color: white;
-            width: 500px;
-            height: 685px;
-            border-radius: 20px;
-            text-align: center;
-            padding-top: 50px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
 
-        #aceitar{
-            height: 40px;
-            width: 60px;
-            background-color: red;
-            border: 2px solid white;
-            border-radius: 10px;
-            color: white;
-            margin-left: -60px;
-            transition: background-color 0.3px;
-
-        }
-        #aceitar:hover{
-            background-color: green;
-        }
-        #recusar{
-            position: absolute;
-            height: 40px;
-            width: 70px;
-            background-color: red;
-            border: 2px solid white;
-            border-radius: 10px;
-            color: white;
-            margin-left: 10px;
-
-        }
-    </style>
 </head>
 <body>
 
@@ -63,24 +23,6 @@
        
 
     </div>
-
-    <script>
-        function fuja(){
-            var botaoRecusar = document.getElementById("recusar")
-            var larguraJanela = window.innerWidth;
-            var alturaJanela = window.innerHeight;
-
-            var maxX = larguraJanela - botaoRecusar.offsetWidth;
-            var maxY = alturaJanela - botaoRecusar.offsetHeight;
-
-            var aleatorioX = Math.floor(Math.random() * maxX);
-            var aleatorioY = Math.floor(Math.random() * maxY);
-
-            botaoRecusar.style.left = aleatorioX + "px";
-            botaoRecusar.style.top = aleatorioY + "px";
-        }
-        
-    </script>
     
 </body>
 </html>
